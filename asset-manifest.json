@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/packetfabric-registration/static/css/main.ee8e757a.chunk.css",
+    "main.js": "/packetfabric-registration/static/js/main.d70ffd22.chunk.js",
+    "main.js.map": "/packetfabric-registration/static/js/main.d70ffd22.chunk.js.map",
+    "runtime-main.js": "/packetfabric-registration/static/js/runtime-main.c967f8bd.js",
+    "runtime-main.js.map": "/packetfabric-registration/static/js/runtime-main.c967f8bd.js.map",
+    "static/js/2.2e9724b1.chunk.js": "/packetfabric-registration/static/js/2.2e9724b1.chunk.js",
+    "static/js/2.2e9724b1.chunk.js.map": "/packetfabric-registration/static/js/2.2e9724b1.chunk.js.map",
+    "index.html": "/packetfabric-registration/index.html",
+    "precache-manifest.1f87fa1cd5b3f3e78562eae5f7b4c229.js": "/packetfabric-registration/precache-manifest.1f87fa1cd5b3f3e78562eae5f7b4c229.js",
+    "service-worker.js": "/packetfabric-registration/service-worker.js",
+    "static/css/main.ee8e757a.chunk.css.map": "/packetfabric-registration/static/css/main.ee8e757a.chunk.css.map",
+    "static/js/2.2e9724b1.chunk.js.LICENSE.txt": "/packetfabric-registration/static/js/2.2e9724b1.chunk.js.LICENSE.txt",
+    "static/media/default.min.css": "/packetfabric-registration/static/media/chevron-down.c66b213d.svg",
+    "static/media/packetfabric-logo.png": "/packetfabric-registration/static/media/packetfabric-logo.abd164ce.png",
+    "static/media/success.png": "/packetfabric-registration/static/media/success.49dc8820.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c967f8bd.js",
+    "static/js/2.2e9724b1.chunk.js",
+    "static/css/main.ee8e757a.chunk.css",
+    "static/js/main.d70ffd22.chunk.js"
+  ]
+}
