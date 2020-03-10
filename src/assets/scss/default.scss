@@ -1,0 +1,411 @@
+//colors
+$primary: #3168BC;
+$background: #FAFBFC;
+$dark: #1A1F36;
+$light: #FFFFFF;
+$navy: #8287A1;
+$light-grey: #8C8F9A;
+$dark-grey: #76787F;
+$success: #31BC67;
+$warning: #D53333;
+
+//borders
+$border: solid 1px #E3EAEF;
+$radius: 4px;
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: $dark;
+}
+
+//text
+h1 {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+p {
+  color: $navy;
+}
+
+//form ui
+button {
+  background-color: $primary;
+  color: $light;
+  border-radius: $radius;
+  border: none;
+  padding: 12px 24px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: .2s;
+
+  svg {
+    margin-top: -3px;
+    margin-left: 8px;
+  }
+
+  &:hover {
+    opacity: .9;
+  }
+
+  &:disabled {
+    opacity: .5;
+    cursor: pointer;
+  }
+}
+
+input, select {
+  background-color: $background;
+  color: $dark;
+  border: $border;
+  border-radius: $radius;
+  padding: 12px 8px;
+
+  &::placeholder {
+    color: $navy;
+  }
+
+  &:focus {
+    outline: none;
+    border: solid 1px $navy;
+  }
+}
+
+.error {
+  color: $warning;
+  font-size: 14px;
+  margin-bottom: 24px;
+  margin-top: -14px;
+
+  &-input {
+    border: solid 1px $warning;
+
+    &:focus {
+      border: solid 1px $warning;
+    }
+  }
+}
+
+.validate:focus {
+  background-image: url('../img/check.svg');
+  background-repeat: no-repeat;
+  background-position: 97%;
+}
+
+input.col-sm-12.col-md-6 {
+    max-width: 238px;
+
+    @media screen and (max-width: '768px') {
+      max-width: 500px;
+    }
+}
+
+.spacing-2 {
+  margin-right: 24px;
+
+  @media screen and (max-width: '768px') {
+    margin-right: 0;
+  }
+}
+
+.spacing-3 {
+  margin-right: 24px;
+  margin-left: 24px;
+
+  @media screen and (max-width: '768px') {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+input.col-sm-12.col-md-4 {
+    max-width: 150px;
+
+    @media screen and (max-width: '768px') {
+      max-width: 500px;
+    }
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url('../img/chevron-down.svg');
+  background-repeat: no-repeat;
+  background-position: 97%;
+}
+
+input[type=checkbox], input[type=radio] {
+  float: left;
+  margin-top: 3px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+
+label {
+  color: $navy
+}
+
+button, input, select {
+  margin-bottom: 24px;
+}
+
+.back {
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  display: inline-block;
+  color: $dark-grey;
+  padding: 12px 0;
+}
+
+.skip {
+  float: right;
+  margin-right: 24px;
+}
+
+//
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 16px 32px;
+  width: 100%;
+  z-index: 500;
+
+  img {
+    width: 200px;
+  }
+
+  .help {
+    padding-top: 16px;
+    float: right;
+  }
+}
+
+nav {
+  position: absolute;
+
+  ul {
+    list-style: none;
+    margin-top: 140px;
+
+    li {
+      margin-bottom: 32px;
+      font-size: 13px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+      color: $dark-grey;
+
+      .current {
+        color: $primary;
+      }
+
+      .sub-category {
+        text-transform: none;
+        margin-left: 40px;
+        margin-top: 24px;
+        font-size: 14px;
+        letter-spacing: 0;
+
+        &-selected {
+          font-weight: bold;
+
+          svg {
+            margin-left: 16px;
+            margin-top: -2px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.onboarding {
+  position: absolute;
+  width: 35%;
+  padding-right: 32px;
+
+  ul {
+    list-style: none;
+    margin-top: 140px;
+
+    li {
+      margin-bottom: 32px;
+
+      svg {
+        margin-top: 0;
+      }
+
+      p {
+        color: $light-grey;
+        padding-left: 40px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  float: left;
+  margin-top: -3px;
+  margin-right: 16px;
+
+  &-number {
+    border: solid 2px $dark-grey;
+    text-align: center;
+  }
+
+  &-success {
+    background-color: $success;
+  }
+
+  &-info {
+    background-color: $primary;
+  }
+
+  &-current {
+    color: $primary;
+    border: solid 2px $primary;
+  }
+
+  svg {
+    margin-left: 4px;
+    margin-top: 4px;
+  }
+}
+
+.side {
+  height: 100vh;
+  width: 35%;
+  background-color: $background;
+  outline: $border;
+  position: absolute;
+  left: 0;
+  overflow: hidden;
+
+  svg {
+    position: absolute;
+    opacity: .05;
+    width: 275%;
+  }
+
+  svg:first-child {
+    bottom: 0;
+    left: -400px;
+  }
+
+  svg:nth-child(2) {
+    bottom: -44px;
+    left: -620px;
+  }
+
+
+}
+
+.form-container {
+  position: absolute;
+  width: 65%;
+  right: 0;
+  padding-top: 128px;
+
+  @media screen and (max-width: '768px') {
+    width: 100%;
+  }
+
+  &-inner {
+    position: relative;
+    max-width: 500px;
+    margin: auto;
+
+    img {
+      width: 500px;
+    }
+  }
+}
+
+.scroll-box {
+  width: 100%;
+  height: 300px;
+  overflow: auto;
+  padding: 20px;
+  color: $navy;
+  background-color: $background;
+  border: $border;
+  border-radius: $radius;
+
+  h1 {
+    color: $dark;
+  }
+}
+
+.modal {
+  width: 80%;
+  height: auto;
+  padding: 32px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-30%);
+  display: block;
+  background-color: $background;
+  color: $navy;
+  border-radius: $radius;
+  border: $border;
+  z-index: 999;
+
+  &-link {
+    font-size: 13px;
+    cursor: pointer;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    display: block;
+    color: $primary;
+  }
+
+  &-background {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background-color: $dark;
+    opacity: .5;
+    z-index: 998;
+  }
+
+  &-close {
+    cursor: pointer;
+    position: absolute;
+    border: solid 2px $primary;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    color: $primary;
+    top: 10px;
+    right: 10px;
+    text-align: center;
+    transition: .2s;
+
+    &-inner {
+      margin-top: -2px;
+    }
+
+    &:hover {
+      opacity: .9;
+    }
+  }
+}
